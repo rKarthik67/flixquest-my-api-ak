@@ -7,7 +7,7 @@ import Redis from "ioredis";
 dotenv.config();
 
 export const workers_url = process.env.WORKERS_URL && process.env.WORKERS_URL;
-export const tmdbKey = "5a917d25f7c40ac92b4317c99a46600d";
+export const tmdbKey = process.env.TMDB_KEY && process.env.TMDB_KEY;
 
 export const redis =
     process.env.REDIS_HOST &&
